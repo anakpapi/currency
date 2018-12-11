@@ -1,32 +1,126 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.row{
+  width: 100%;
+  display: inline-block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 50%;
+  margin: 0  25%;
+  border: solid 1px #000;
+  border-radius: 5px;
+}
+.DefaultCurrency {
+  border-bottom: 1px black solid;
+  display: block;
+  float: left;
+  width: 95%;
+  padding: 2.5%;
+}
+.DefaultCurrency h3 {
+  margin: 0;
+  font-style: italic;
+}
+.DefaultCurrency .InputWrapper{
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+.DefaultCurrency .InputWrapper label,
+.DefaultCurrency .InputWrapper input{
+  display: inline;
+  margin: 0; 
+}
+.DefaultCurrency .InputWrapper label{
+  font-size: 24px;
+  font-weight: bold;
+}
+.DefaultCurrency .InputWrapper input {
+  border: none;
+  margin: 0;
+  float: right;
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.5em;
+  height: 1.25em;
+  display: inline;
+}
+.ListWrapper{
+  display: inline-block;
+  width: 95%;
+  padding: 2.5%; 
+}
+.ListWrapper .AddCurrency{
+  padding: 5px 10px;
+  border: solid 1px #000;
+}
+.ListWrapper .AddCurrency .CurrencyForm{
+  width: 100%;
+}
+.ListWrapper .AddCurrency .CurrencyForm select{
+  width: 80%;
+}
+.ListWrapper .AddCurrency .CurrencyForm button{
+  margin-left: 3%;
+  background: #60a3bc;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  width: 17%;
+}
+.Currency {
+  border: 1px black solid;
+  padding: 0 10px;  
+  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.Currency .WrapDetail{
+  position: relative;
+  padding: 10px 5px;
+  width: 90%;
+}
+.Currency .WrapDetail:before{
+  position: absolute;
+  content: '';
+  border-right: solid 1px #000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+}
+.Currency .WrapDetail h4{
+  display: inline-block;
+  float: left;
+  margin: 5px 0;
+}
+.Currency .WrapDetail span{
+  float: right;
+  display: inline-block;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+.Currency .removeButton{
+  width: 10%; 
+  align-self: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Currency .CurrencyInfo {
+  margin: 5px 0;
+  font-weight: bold;
+  font-style: italic;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.Currency .ratesInfo{
+  margin: 0;
+}
+.Currency .amount {
+  text-align: right;
+}
+@media (max-width: 767px) { 
+  .App{
+    width: 90%;
+    margin: 0  5%;
   }
 }
